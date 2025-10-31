@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Name - Portfolio</title>
+  
+  <style>
+    /* This styles the whole page */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9; /* Light gray background */
+      margin: 0;
+      padding: 20px;
+    }
+    
+    /* This is the main container that holds your two columns */
+    .container {
+      display: flex; /* This is the magic! It turns on Flexbox. */
+      max-width: 960px; /* Stops the site from being too wide */
+      margin: 40px auto; /* Centers the container on the page */
+      background-color: #ffffff; /* White background for the card */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    
+    /* This styles the LEFT column (your text) */
+    .bio-text {
+      flex: 2; /* Makes this column take up 2/3 of the space */
+      padding-right: 30px; /* Adds space between text and image */
+    }
+    
+    /* This styles the RIGHT column (your image) */
+    .bio-image {
+      flex: 1; /* Makes this column take up 1/3 of the space */
+      display: flex;
+      align-items: flex-start; /* Aligns image to the top */
+      justify-content: center;
+    }
+    
+    /* This makes your image look good */
+    .bio-image img {
+      width: 100%; /* Makes the image fit its column */
+      min-width: 200px; /* Prevents it from getting too small */
+      border-radius: 50%; /* This makes it a circle! */
+    }
+    
+    /* Style for links */
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+  
+    <div class="bio-text">
+      <h1>Your Name</h1>
+      
+      <p>
+        Hi! I'm a PhD student at [Your University], where I work on... 
+        (This is where you write your bio, just like in the example).
+      </p>
+      <p>
+        You can add links to your <a href="https://scholar.google.com/">Google Scholar</a>
+        or <a href="https://www.linkedin.com/">LinkedIn</a>.
+      </p>
+      
+      <p>
+        See my <a href="research.html">Research</a>.
+      </p>
+      
+    </div>
+    
+    <div class="bio-image">
+      <img src="my_photo.jpg" alt="A photo of me">
+    </div>
+    
+  </div>
+
+</body>
+</html>
