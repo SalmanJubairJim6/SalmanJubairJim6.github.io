@@ -53,6 +53,57 @@
     a:hover {
       text-decoration: underline;
     }
+    /* --- NEW STYLES FOR PUBLICATIONS --- */
+    
+/* This is a new container for your research section */
+.research-container {
+  max-width: 960px;
+  margin: 40px auto; /* Centers the container */
+  background-color: #ffffff; /* White background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* This is the individual "paper" item */
+.publication-item {
+  display: flex; /* This is the Flexbox magic! */
+  margin-bottom: 30px; /* Space between papers */
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+.publication-item:last-child {
+  border-bottom: none; /* No border on the last item */
+  margin-bottom: 0;
+}
+
+/* LEFT Column: The paper's image */
+.publication-image {
+  flex: 1; /* Takes up 1/3 of the space */
+  padding-right: 20px;
+}
+.publication-image img {
+  width: 100%; /* Make image fill its column */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* RIGHT Column: The paper's text */
+.publication-text {
+  flex: 3; /* Takes up 3/4 of the space */
+}
+.publication-text h3 {
+  margin-top: 0; /* Remove extra space above title */
+  font-size: 1.25em;
+}
+.publication-text .authors {
+  font-style: italic;
+  color: #555;
+}
+.publication-text .venue {
+  font-weight: bold;
+  color: #333;
+}
     
   </style>
 </head>
@@ -73,7 +124,7 @@
       </p>
       
       <p>
-        See my <a href="research.html">Research</a>.
+  See my <a href="#research">Research</a>.
       </p>
       
     </div>
@@ -83,6 +134,83 @@
     </div>
     
   </div>
+    <!-- ========================= -->
+<!-- NEW RESEARCH SECTION STARTS -->
+<!-- ========================= -->
+<div class="research-container">
+    
+    <!-- This id="research" lets the link from Step 2 work -->
+    <h1 id="research">Research & Publications</h1>
+    
+    <hr> <!-- A horizontal line -->
+    
+    <!-- PUBLICATION ITEM 1 -->
+    <div class="publication-item">
+      <!-- LEFT: Image for the paper -->
+      <div class="publication-image">
+        <!-- 
+          Upload your paper's image (e.g., "paper1_thumb.png") 
+          to your repository, just like your profile photo. 
+        -->
+        <img src="https://placehold.co/400x300/eee/ccc?text=Paper+Image" alt="Thumbnail for paper 1">
+      </div>
+      
+      <!-- RIGHT: Text for the paper -->
+      <div class="publication-text">
+        <h3>Title of Your First Paper Goes Here</h3>
+        <p class="authors">
+          Salman Jubair Jim, Your Co-author, Another Co-author
+        </p>
+        <p class="venue">
+          Conference or Journal Name 2024
+        </p>
+        <p>
+          This is where you would paste the abstract. This paper focuses on developing new methods for...
+        </p>
+        <p>
+          <!-- Add links to your paper -->
+          <a href="#">[PDF]</a> 
+          <a href="#">[Code]</a> 
+          <a href="#">[arXiv]</a>
+        </p>
+      </div>
+    </div>
+    <!-- END PUBLICATION ITEM 1 -->
 
+    
+    <!-- PUBLICATION ITEM 2 -->
+    <div class="publication-item">
+      <div class="publication-image">
+        <img src="https://placehold.co/400x300/eee/ccc?text=Paper+Image" alt="Thumbnail for paper 2">
+      </div>
+      
+      <div class="publication-text">
+        <h3>Title of Your Second Paper</h3>
+        <p class="authors">
+          Salman Jubair Jim, Your Co-author
+        </p>
+        <p class="venue">
+          Conference or Journal Name 2023
+        </p>
+        <p>
+          Paste the abstract here... We explore the challenges of AI in ultrasound imaging...
+        </p>
+        <p>
+          <a href="#">[PDF]</a> 
+          <a href="#">[Code]</a> 
+          <a href="#">[arXiv]</a>
+        </p>
+      </div>
+    </div>
+    <!-- END PUBLICATION ITEM 2 -->
+    
+    <!-- To add more papers, just copy and paste the 
+         whole <div class="publication-item">...</div> 
+         block and change the text. -->
+         
+</div>
+<!-- ======================= -->
+<!-- NEW RESEARCH SECTION ENDS -->
+<!-- ======================= -->
 </body>
 </html>
